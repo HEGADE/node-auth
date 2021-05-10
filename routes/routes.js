@@ -5,7 +5,7 @@ let post = require("../post");
 route.get("/", (req, res) => {
   post = post.filter((eachPost) => eachPost.name === req.username);
 
-  res.json(post);
+  res.status(200).json({ post, msg: "authorized/0" });
 });
 // route for something page ->api/something
 route.get("/something", (req, res) => res.send("Just a testing route"));

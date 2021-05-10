@@ -1,0 +1,7 @@
+0 for allowing access
+1 for user created 
+2 for sucessfully login
+-3 useralredy exits
+-2 access denied or token have'nt provided
+-1 invalid credentials
+-4 unfilled password or username

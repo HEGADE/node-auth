@@ -6,8 +6,8 @@ let { createToken } = require("../tokenCreation/token");
 module.exports = async (req, res, next) => {
   const { username, password } = req.body;
 
-  let token = await createToken(username);
+  let token = await createToken(username.trim());
   req.token = token;
-  req.msg = 1;
+  req.msg = "user successfully logged in/2";
   next();
 };
