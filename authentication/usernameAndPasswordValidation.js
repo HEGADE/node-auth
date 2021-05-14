@@ -3,4 +3,3 @@ const something = (username, password) => {
   let validPassword = password.trim().length >= 4 ? true : false;
   return validUserdName && validPassword;
 };
-console.log(something("  sfs ", "     serfsdfsadf"));

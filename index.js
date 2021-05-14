@@ -41,5 +41,5 @@ app.post("/register", newUser, (req, res) => {
 });
 
 app.listen(8000, () => {
-  console.log("Sever listening at port......  " + PORT);
+  console.log("Sever listening at port......  ", PORT);
 });
