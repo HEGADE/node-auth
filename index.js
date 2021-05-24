@@ -12,17 +12,18 @@ const newUser = require("./registerUser/newUser");
 let PORT = process.env.POST || 8000;
 
 // Function for handling get request on / (route url)
-const showCurrectURL = () => {
+
+const showCorrectURL = () => {
   return `
   <a href="/api"> Go to main Route</a>
   
   `;
 };
 
-// main route /
+// main route -->/
 
 app.get("/", (req, res) => {
-  res.status(203).send(showCurrectURL());
+  res.status(203).send(showCorrectURL());
 });
 
 // main api route --> /api

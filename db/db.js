@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 mongoose
   .connect(" mongodb://127.0.0.1:27017/userData", {
     useNewUrlParser: true,
-    // seUnifiedTopology: true ,
     useUnifiedTopology: true,
-    // createIndexes:true,
     useCreateIndex: true,
   })
 

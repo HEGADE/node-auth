@@ -14,7 +14,6 @@ module.exports = async (req, res, next) => {
     let { password } = userDataFromDataBase;
 
     let isMatch = await bcrypt.compare(req.body.password, password);
-    console.log(isMatch);
 
     if (isMatch) return next();
   }
