@@ -4,7 +4,9 @@ require("dotenv").config();
 const authenticate = require("./authentication/auth");
 const handleLogin = require("./loginHandler/handleLogin");
 const authenticateUser = require("./loginHandler/authenticateUser");
+const helmet =require("helmet")
 const app = express();
+app.use(helmet())
 app.use(express.json());
 app.use(cors());
 const route = require("./routes/routes");
