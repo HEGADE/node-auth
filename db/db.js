@@ -16,12 +16,12 @@ mongoose
 const UserSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true,
+    required: [true,"user name must be required"],
     unique: true,
   },
   password: {
     type: String,
-    required: true,
+    required: [true,'password must be required'],
   },
 });
 UserData = new mongoose.model("userdata", UserSchema);
