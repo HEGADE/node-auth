@@ -12,7 +12,7 @@ Can be used for authenticating the user using react js
 ```
 ## Usage
 ```bash
->> npm run
+>> npm start
 ```
 
   
