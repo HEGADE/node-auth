@@ -1,18 +1,18 @@
-# nodejs authentication using jwt
 
+
+# Node js auth using jwt
+
+Can be used for authenticating the user using react js 
 
 ## Installation
 
 
-
 ```bash
-npm install
+  >> npm install
 ```
-
 ## Usage
-
-```
-npm start
-
+```bash
+>> npm run
 ```
 
+  
